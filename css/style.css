@@ -254,3 +254,13 @@ textarea {
   padding: 0;
   box-sizing: border-box;
 }
+
+body::before {
+  content:'';
+  width: 45%;
+  background-color: #2e2f38;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
