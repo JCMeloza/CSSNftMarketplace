@@ -1,85 +1,92 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div class="container">
-      <header class="header">
-        <div class="header_logo">
-          <a href="#">
-            <img src="/img/nft-logo.svg" alt="Logo Artzie">
-          </a>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Belgrano&family=Poppins:wght@300;400;700&display=swap"
+    rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header_logo">
+        <a href="#">
+          <img src="/img/nft-logo.svg" alt="Logo Artzie">
+        </a>
+      </div>
+      <nav class="nav_principal">
+        <ul>
+          <li><a href="#">Market</a></li>
+          <li><a href="#">How it works</a></li>
+          <li><a href="#">Galery</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+      <aside class="login">
+        <ul>
+          <li><a href="#">Sign Up</a></li>
+          <li><a href="#">Sign in</a></li>
+        </ul>
+      </aside>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>The largest NFT market with exceptional items on the bid</h1>
+        <p class="hero_subtitle">Collectible and non-fungible tokens in your hands</p>
+        <div class="hero_button">
+          <a href="#">Explore</a>
+          <a href="#">Learn more <img src="/img/arrow-right.svg" alt=""></a>
         </div>
-        <nav class="nav_principal">
-          <ul>
-            <li><a href="#">Market</a></li>
-            <li><a href="#">How it works</a></li>
-            <li><a href="#">Galery</a></li>
-            <li><a href="#">About</a></li>
-          </ul>
-        </nav>
-        <aside class="login">
-          <ul>
-            <li><a href="#">Sign Up</a></li>
-            <li><a href="#">Sign in</a></li>
-          </ul>
-        </aside>
-      </header>
-  
-      <main>
-        <section class="hero">
-          <h1>The largest NFT market with exceptional items on the bid</h1>
-          <p class="hero_subtitle">Collectible and non-fungible tokens in your hands</p>
-          <div class="hero_button">
-            <a href="#">Explore</a>
-            <a href="#">Learn more <img src="/img/arrow-right.svg" alt=""></a>
-          </div>
-        </section>
-        <section class="featured">
-          <h2 class="featured_title">Featured Artwork</h2>
-          <div class="featured_img">
-            <img width="400" src="img/project-1-img.png" alt="">
-            <img width="400" src="img/project-2-img.png" alt="">
-          </div>
-        </section>
-        <article class="nft">
-          <div class="nft_imagecontainer">
-            <img src="/img/nft-image.png" alt="">
-          </div>
-          <div class="nft_data">
-            <div class="nft_header">
-              <div class="nft_owner">
-                <img src="img/nft-owner.png" alt="">
-                <div class="nft_owner_data">
-                  <p class="nft_username">@samanthaw</p>
-                  <p class="nft_name">Artwork #01</p>
-  
-                </div>
-  
+      </section>
+      <section class="featured">
+        <h2 class="featured_title">Featured Artwork</h2>
+        <div class="featured_img">
+          <img width="400" src="img/project-1-img.png" alt="">
+          <img width="400" src="img/project-2-img.png" alt="">
+        </div>
+      </section>
+      <article class="nft">
+        <div class="nft_imagecontainer">
+          <img src="/img/nft-image.png" alt="">
+        </div>
+        <div class="nft_data">
+          <div class="nft_header">
+            <div class="nft_owner">
+              <img src="img/nft-owner.png" alt="">
+              <div class="nft_owner_data">
+                <p class="nft_username">@samanthaw</p>
+                <p class="nft_name">Artwork #01</p>
+
               </div>
-              <div class="nft_price">
-                <p class="nft_price_current">Current Bid</p>
-                <p class="nft_price_number">1.00 ETH</p>
-              </div>
+
             </div>
-            <div class="nft_buttons">
-              <a href="#">Bid Now</a>
-              <a href="#">View Artwork</a>
+            <div class="nft_price">
+              <p class="nft_price_current">Current Bid</p>
+              <p class="nft_price_number">1.00 ETH</p>
             </div>
           </div>
-          <div class="nft_numbers">
-            <div><span class="nft_number">50k+</span>Artwork</div>
-            <div><span class="nft_number">30k+</span>Artist</div>
-            <div><span class="nft_number">20k+</span>Auction</div>
+          <div class="nft_buttons">
+            <a href="#">Bid Now</a>
+            <a href="#">View Artwork</a>
           </div>
-        </article>
-      </main>
-  
-    </div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+        </div>
+        <div class="nft_numbers">
+          <div><span class="nft_number">50k+</span>Artwork</div>
+          <div><span class="nft_number">30k+</span>Artist</div>
+          <div><span class="nft_number">20k+</span>Auction</div>
+        </div>
+      </article>
+    </main>
+
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
 </html>
