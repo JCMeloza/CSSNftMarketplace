@@ -31,7 +31,7 @@ body {
 
     &::before {
         content: "";
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
         bottom: 0;
@@ -42,7 +42,7 @@ body {
 }
 
 .container {
-    max-width: 1300px;
+    max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 1rem;
@@ -146,6 +146,7 @@ main {
 .featured {
     grid-column: 1 / span 1;
     padding-right: 40px;
+    max-width: 93%;
 
     &_title {
         font-family: $font-title;
@@ -186,6 +187,9 @@ main {
     &_header {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 20px;
+        border-bottom: 1px solid $grey-light;
+        padding-bottom: 20px;
         
     }
 
@@ -196,7 +200,7 @@ main {
             margin-left: 15px;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: space-around;
         }
 
         &_username {
@@ -207,17 +211,47 @@ main {
         &_name {
             font-weight: bold;
         }
-        &_price {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            &_current{
-                color: $grey-light;
-            }
-            &_number{
-                font-size: 20px;
-                font-weight: bold;
-            }
+        
+    }
+    &_price {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &_current{
+            color: $grey-light;
+        }
+        &_number{
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+    &_buttons{
+        display:flex;
+        justify-content: space-between;
+        a {
+            @include button();
+            padding: 12px 40px;
+            width: 50%;
+            text-align: center;
+            font-weight: 500;
+        }
+        a:last-child {
+            background-color: white;
+            color: $red-bg;
+        }
+    }
+    &_numbers {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+        color: white;
+        font-weight: 400;
+        font-size: 14px;
+
+        &_number {
+            color: $red-bg;
+            font-weight: bold;
+            font-size: 20px;
         }
     }
 }
